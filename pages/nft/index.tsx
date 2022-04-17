@@ -5,7 +5,6 @@ const NftDropPage = () => {
   const connectWithMetaMask = useMetamask()
   const address = useAddress()
   const disconnect = useDisconnect()
-  console.log(address)
   return (
     <div className=" flex h-screen flex-col lg:grid lg:grid-cols-10 ">
       <div className=" bg-gradient-to-br  from-cyan-800 to-rose-500 lg:col-span-4 ">
