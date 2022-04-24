@@ -1,7 +1,5 @@
 import type { GetServerSideProps, NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
-import NftDropPage from './nft/[id]'
 import { sanityClient, urlFor } from '../sanity'
 import { Collection } from '../typings.d'
 import Link from 'next/link'

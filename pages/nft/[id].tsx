@@ -11,6 +11,7 @@ import { Collection } from '../../typings.d'
 import Link from 'next/link'
 import { BigNumber } from 'ethers'
 import toast, { Toaster } from 'react-hot-toast'
+import Head from 'next/head'
 
 interface Props {
   collection: Collection
@@ -98,6 +99,10 @@ const NftDropPage = ({ collection }: Props) => {
   }
   return (
     <div className=" flex h-screen flex-col lg:grid lg:grid-cols-10 ">
+      <Head>
+        <title>NFT-DROP-REACT</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Toaster position="bottom-center" />
       <div className=" bg-gradient-to-br  from-cyan-800 to-rose-500 lg:col-span-4 ">
         <div className=" flex flex-col items-center justify-center py-2 lg:min-h-screen ">
